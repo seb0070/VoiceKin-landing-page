@@ -1481,16 +1481,20 @@
           <h3 class="feat-title">자녀 앱<br />음성 등록 · 관리</h3>
           <ul class="feat-list">
             <li>
-              15문장을 낭독해 Voiceprint 생성<span class="feat-sub"
-                >이후 언제든 재녹음 · 삭제 가능</span
+              15문장 낭독으로 음성 지문(Voiceprint) 생성<span class="feat-sub"
+                >이후 언제든 재녹음하거나 삭제 가능</span
               >
             </li>
             <li>
-              원본 음성은 즉시 삭제<span class="feat-sub"
-                >벡터만 동기화, 개인정보 보호</span
+              원본 음성은 등록 즉시 자동 삭제<span class="feat-sub"
+                >음성 복원이 불가능한 암호화 데이터(수학적 특징값)만 저장, 개인정보 철저 보호</span
               >
             </li>
-            <li>정질 · 자진 · 보호자 등 상태 표시</li>
+            <li>
+              현재 상태를 직관적으로 표시<span class="feat-sub"
+                >음성 분석 중 · 보호 활성화 · 가족 연결 상태</span
+              >
+            </li>
           </ul>
         </div>
         <div class="feat-imgs">
@@ -1538,19 +1542,19 @@
           <h3 class="feat-title">실시간 통화 감지<br />분석 · 경고</h3>
           <ul class="feat-list">
             <li>
-              <strong>85점 이상</strong
+              <strong>완전 일치 (정상)</strong
               ><span class="feat-sub"
-                >정상 판정, 알림 없이 백그라운드 저장</span
+                >등록된 가족 목소리가 확인되고 AI 합성 흔적 없음 — 알림 없이 백그라운드에서 안전 처리</span
               >
             </li>
             <li>
-              <strong>50 ~ 85점</strong
-              ><span class="feat-sub">주의 알림 발송, 재통화 버튼 제공</span>
+              <strong>목소리 일치 · 합성 의심 (주의)</strong
+              ><span class="feat-sub">목소리는 유사하나 딥보이스 복제가 의심되는 상태 — 즉시 주의 알림 발송 및 재통화 버튼 제공</span>
             </li>
             <li>
-              <strong>50점 이하</strong
+              <strong>가족 불일치 · AI 합성음 (위험)</strong
               ><span class="feat-sub"
-                >위험 알림 발송, 112 신고 · 1332 금감원 버튼 노출</span
+                >가족의 목소리가 아니며 AI가 생성한 합성음으로 판명 — 위험 알림과 함께 112 신고 · 1332 금융감독원 버튼 즉시 노출</span
               >
             </li>
           </ul>
@@ -1583,18 +1587,18 @@
           <h3 class="feat-title">통화 종료 후<br />분석 · 보호 모드</h3>
           <ul class="feat-list">
             <li>
-              통화 종료 시 자동 트리거 발생<span class="feat-sub"
-                >별도 조작 없이 백그라운드에서 자동 처리</span
+              통화 종료 즉시 자동 실행<span class="feat-sub"
+                >별도 조작 없이 백그라운드에서 분석 완료</span
               >
             </li>
             <li>
-              ECAPA + AASIS로 10초 이내 신뢰도 산출<span class="feat-sub"
-                >화자 인식 + 딥페이크 탐지 모델 병렬 분석</span
+              화자 인식(ECAPA) + 딥페이크 탐지(AASIST) 모델 병렬 작동<span class="feat-sub"
+                >10초 이내 신뢰도 산출</span
               >
             </li>
             <li>
-              차단이 아닌 경고만, 판단의 주체는 사용자<span class="feat-sub"
-                >오탐지로 인한 불편 최소화</span
+              차단이 아닌 경고 중심 설계<span class="feat-sub"
+                >최종 판단은 사용자가 직접, 오탐지로 인한 불편 최소화</span
               >
             </li>
           </ul>
